@@ -1,0 +1,7 @@
+[package]
+name = "reed"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+scarlet-ui = { path = "../scarlet-ui/crates/scarlet-ui", default-features = false, features = ["std", "platform-winit"] }
