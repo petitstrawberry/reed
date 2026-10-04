@@ -68,7 +68,7 @@ impl View for Reed {
     fn create_element(&self) -> Box<dyn Element> {
         Box::new(ComponentElement::new_with_builder(
             self.clone(),
-            |reed: &Reed| reed.content().create_element(),
+            |reed: &Reed| Box::new(reed.content()),
         ))
     }
 
