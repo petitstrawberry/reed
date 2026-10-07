@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2024"
 
 [target.'cfg(target_os = "scarlet")'.dependencies]
-scarlet-ui = { git = "https://github.com/petitstrawberry/scarlet-ui", rev = "7136831fd071cdd38260d256b0768f080b14a73e", package = "scarlet-ui", default-features = false, features = ["std", "platform-sws"] }
+scarlet-ui = { git = "https://github.com/petitstrawberry/scarlet-ui", rev = "ce807d0f2dfc978c60d7f3b807026455ee101da4", package = "scarlet-ui", default-features = false, features = ["std", "platform-sws"] }
 
 [target.'cfg(not(target_os = "scarlet"))'.dependencies]
-scarlet-ui = { git = "https://github.com/petitstrawberry/scarlet-ui", rev = "7136831fd071cdd38260d256b0768f080b14a73e", package = "scarlet-ui", default-features = false, features = ["std", "platform-winit"] }
+scarlet-ui = { git = "https://github.com/petitstrawberry/scarlet-ui", rev = "ce807d0f2dfc978c60d7f3b807026455ee101da4", package = "scarlet-ui", default-features = false, features = ["std", "platform-winit"] }
